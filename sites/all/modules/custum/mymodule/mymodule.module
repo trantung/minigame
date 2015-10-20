@@ -1,0 +1,50 @@
+<?php
+function mymodule_user_login(&$edit, $account) {
+  drupal_goto('/');
+}
+/**
+ * Implements hook_block_info().
+ */
+function mymodule_block_info() {
+  $blocks = array();
+  $blocks['search'] = array(
+    'info' => t('My Custom Block Search'),
+  );
+  
+  return $blocks;
+}
+function mymodule_block_view($delta = '') {
+  $block = array();
+
+  switch ($delta) {
+    case 'search':
+      $block['content'] = drupal_get_form('MYFORM_form');
+    break;
+  }
+  return $block;
+}
+
+/**
+ * Custom form.
+ */
+function MYFORM_form($form, &$form_state) {
+  $form['MYFIELD'] = array(
+    '#type' => 'textfield',
+    
+  );
+
+  $form['submit'] = array(
+    '#type' => 'submit',
+    '#value' => t('Search'),
+  );
+
+  return $form;
+}
+function MYFORM_form_submit($form, &$form_state) {
+  if(isset($form_state['values']['MYFIELD'])) {
+			$arr_param['key'] = $form_state['values']['MYFIELD'];
+		}
+  $form_state['redirect'] = array(current_path().'/nd', array('query' => $arr_param));
+}
+
+?>

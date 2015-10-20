@@ -1,0 +1,64 @@
+name = Gamemini
+description = <br/>Design & Development by Dannt. 
+core = 7.x
+
+engine = phptemplate
+stylesheets[all][] = css/family.css
+scripts[] = js/01-10281-radar10.js
+scripts[] = js/analytics.js
+scripts[] = js/beacon.js
+scripts[] = js/BoxCountLayout.js
+scripts[] = js/linkid.js
+scripts[] = js/sdk.js
+scripts[] = js/spilgames.js
+scripts[] = js/wdg_cookie_bar-MINIFIED-89eb8e7555cd3c25193afd561dec0c2e.js
+scripts[] = js/wdg_featured_games-MINIFIED-7508a1825f8e598e8a611564fb824813.js
+scripts[] = js/wdg_footer-MINIFIED-b878ce5464c32ff2d4416b9892fd8a5c.js
+scripts[] = js/wdg_js_aggregator-MINIFIED-70c1f72cc1a16cacf018b4640a5b94b0.js
+scripts[] = js/wdg_performance_tracker-MINIFIED-adbfcee758de332d9e0a019dcc88.js
+scripts[] = js/wdg_popup_login-MINIFIED-5cc73f784a1e04275644ad00f36223496d80.js
+scripts[] = js/wdg_popup_oauth-MINIFIED-5e1e9181647f76d32db54c08d82da531da1e.js
+scripts[] = js/wdg_popup_register_feedback-MINIFIED-2e37cbb51a0c911896954341.js
+scripts[] = js/wdg_popup_register-MINIFIED-d99de0b7fc8cff81d37a340625d49da0.js
+scripts[] = js/wdg_recent_played_games-MINIFIED-71f1bd5b1726a9899a15c43f2582.js
+scripts[] = js/wdg_search_bar-MINIFIED-13d9a0ae51861c92c8e01708c90f74f6.js
+scripts[] = js/wdg_set-MINIFIED-618b55d2a8b475a98d938ac918892494.js
+scripts[] = js/wdg_theme_settings-MINIFIED-6564b5fba13e7ff7bea3f7397cb756c1.js
+scripts[] = js/wdg_vda-MINIFIED-82d7abe16e6856a4419ad5bd5ee3334a.js
+regions[user_menu]  	 = User Menu
+regions[top_message]     = Top Message
+regions[sidebar_first]   = First Sidebar
+regions[sidebar_second]  = Second Sidebar
+regions[content]         = Content
+regions[footer_first]    = First Bottom
+regions[footer_second]   = Second Bottom
+regions[footer_third]    = Third Bottom
+regions[footer_forth]    = Forth Bottom
+
+features[] = logo
+features[] = name
+features[] = slogan
+features[] = node_user_picture
+features[] = comment_user_picture
+features[] = comment_user_verification
+features[] = favicon
+features[] = main_menu
+features[] = secondary_menu
+
+settings[breadcrumbs]  = 1
+settings[social_links]  = 1
+settings[twitter_url] = "https://twitter.com/zymphonies"
+settings[facebook_url] = "https://www.facebook.com/zymphonies"
+settings[gplus_profile_url] = "https://plus.google.com/u/1/+ZymphoniesTechnologies/"
+settings[linkedin_profile_url] = "https://in.linkedin.com/company/zymphonies"
+settings[pinterest_profile_url] = "http://www.pinterest.com/zymphonies/"
+settings[youtube_profile_url] = "http://www.youtube.com"
+
+
+
+; Information added by Drupal.org packaging script on 2015-03-07
+version = "7.x-1.0"
+core = "7.x"
+project = "mobile_responsive_theme"
+datestamp = "1425752884"
+

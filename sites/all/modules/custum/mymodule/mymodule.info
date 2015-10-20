@@ -1,0 +1,12 @@
+name = My custum module
+description = My custum module.
+core = 7.x
+package = Custum
+
+
+; Information added by Dannt packaging script on 2015-10-16
+version = "7.x-1.2"
+core = "7.x"
+project = "gamemini"
+datestamp = "1409004834"
+
