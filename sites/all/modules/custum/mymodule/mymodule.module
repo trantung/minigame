@@ -73,4 +73,19 @@ function mymodule_libraries_info() {
     ),
   );
 }
+/**
+ * Hook memu
+ */
+ function mymodule_menu() {
+	$items = array();
+   $items['playgame/%'] = array(
+			'title' => t('Trang chơi game'),
+			'page callback' => 'content_play_game',
+			'access arguments' => array('access content'),
+			'file' => 'play_game.inc',
+			'weight' => 1,
+			'type' => MENU_NORMAL_ITEM,
+            );
+   return $items;
+   }
 ?>
