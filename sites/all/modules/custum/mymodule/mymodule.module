@@ -46,5 +46,31 @@ function MYFORM_form_submit($form, &$form_state) {
 		}
   $form_state['redirect'] = array(current_path().'/nd', array('query' => $arr_param));
 }
+/**
+ * The minimum version of Facebook SDK required.
+ */
+define('MYMODULE_MIN_PLUGIN_VERSION', '4.0');
 
+/**
+ * Implementation of hook_libraries_info().
+ */
+function mymodule_libraries_info() {
+  return array(
+    'mymodule' => array(
+      'name' => 'PHP SDK for Facebook APIs',
+      'vendor url' => 'http://developers.facebook.com/',
+      'download url' => 'https://github.com/facebook/facebook-php-sdk-v4/archive/master.zip',
+      'version arguments' => array(
+        'file' => 'facebook-php-sdk-v4-master/src/Facebook/Facebook.php',
+        'pattern' => "/const VERSION = '([\d.]*(?!-dev$))/",
+        'lines' => 60,
+      ),
+      'files' => array(
+        'php' => array(
+          'facebook-php-sdk-v4/src/Facebook/autoload.php',
+        ),
+      ),
+    ),
+  );
+}
 ?>
